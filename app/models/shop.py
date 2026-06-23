@@ -1,5 +1,4 @@
-from uuid import UUID
-from sqlalchemy import UUID as PG_UUID, String, ForeignKey
+from sqlalchemy import String
 from sqlalchemy.orm import Mapped, mapped_column
 from models.base import BaseTable
 
