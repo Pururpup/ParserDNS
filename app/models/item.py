@@ -1,9 +1,10 @@
 from uuid import UUID
 from sqlalchemy import UUID as PG_UUID, String, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column
-from app.models.base import Base
+from models.base import BaseTable
 
-class Item(Base):
+
+class Item(BaseTable):
     __tablename__ = "items"
 
     item_name: Mapped[str] = mapped_column(
